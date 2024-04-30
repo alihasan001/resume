@@ -1,0 +1,41 @@
+<div class="container">
+    <h1 class="heading">About <span class="text">Me</span></h1>
+    <div class="info-containers">
+        <div class="info-container">
+            <h3 class="info-heading">Personal Infos</h3>
+            <div class="infos">
+                <div class="info" *ngFor="let info of personalInfo">
+                    <span class="key">{{info.key}}</span>: <span class="value">{{info.value}}</span>
+                </div>
+            </div>
+            <button class="more-btn">Download CV <span class="arrow-right" nz-icon nzType="download" nzTheme="outline"></span></button>
+        </div>
+        <div class="cards-container">
+            <div class="card" *ngFor="let card of cardsInfo">
+                <span class="value">{{card.value}} <span class="plus"><span nz-icon nzType="plus" nzTheme="outline"></span></span></span>
+                <span class="key"><span class="dash"></span> {{card.key}}</span>
+            </div>
+        </div>
+    </div>
+    <div class="skills-container">
+        <h3 class="skill-heading">My Skills</h3>
+        <div class="skills">
+            <div class="skill" *ngFor="let skill of skillInformation">
+                <nz-progress nzStrokeColor="#ffb400" [nzPercent]="skill.value" nzType="circle"></nz-progress>
+                <span class="key">{{skill.key}}</span>
+            </div>
+        </div>
+    </div>
+    <div class="experience-container">
+        <h3 class="experience-heading">Experience & Education</h3>
+        <div class="experiences">
+            <div class="experience" *ngFor="let experience of experienceInformation">
+                <span class="icon" nz-icon nzType="laptop" nzTheme="outline"></span>
+                <div class="experience-info">
+                    <span class="date">{{experience.date}}</span>
+                    <span class="role">{{experience.role}}<span class="dash"></span><span class="company">{{experience.company}}</span></span>
+                    <span class="description">{{experience.description}}</span>
+                </div>
+            </div>
+    </div>
+</div>

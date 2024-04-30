@@ -1,0 +1,266 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    gap: 70px;
+    padding: 80px 0;
+    background-color: var(--background-color);
+    .heading {
+        font-size: 56px;
+        font-weight: 900;
+        color: var(--secondary-color);
+        line-height: 1.2;
+        text-transform: uppercase;
+        font-family: Poppins,sans-serif;
+        margin: 0;
+        .text {
+            color: var(--primary-color);
+        }
+    }
+    .info-containers{
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        .info-container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            width: 50%;
+            .info-heading {
+                font-weight: 600;
+                font-size: 26px;
+                font-family: Poppins,sans-serif;
+                margin: 0;
+                color: var(--secondary-color);
+            }
+            .infos{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .info {
+                    flex: 0 0 50%;
+                    max-width: 50%;
+                    padding-bottom: 20px;
+                    .key {
+                        font-size: 15px;
+                        font-weight: 500;
+                        line-height: 1.2;
+                        font-family: "Open Sans",sans-serif;
+                        color: var(--secondary-color);
+                    }
+                    .value {
+                        font-weight: 600;
+                        font-size: 15px;
+                        font-family: "Open Sans",sans-serif;
+                        line-height: 1.6;
+                        color: var(--secondary-color);
+                    }
+                }
+            }
+            .more-btn {
+                border: 1px solid var(--primary-color);
+                width: 230px;
+                height: 55px;
+                border-radius: 35px;
+                background: transparent;
+                padding-left: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                position: relative;
+                background: linear-gradient(to right, transparent 50%, var(--primary-color) 50%) left;
+                background-size: 200%;
+                transition: .5s ease-out;
+                color: var(--secondary-color);
+                cursor: pointer;
+                .arrow-right {
+                    background-color: var(--primary-color);
+                    position: absolute;
+                    right: -1px;
+                    top: -1px;
+                    bottom: 0;
+                    width: 55px;
+                    height: 55px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 19px;
+                    color: #fff;
+                    border-radius: 50%;
+                }
+            }
+            .more-btn:hover{
+                background-color: var(--primary-color);
+                transform: translateX(0);
+                background-position: right;
+                color: white;
+            }
+        }
+        .cards-container {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .card {
+                flex: 0 0 auto;
+                width: 45%;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                padding: 20px 30px 25px 40px;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                margin-bottom: 8px;
+                .value {
+                    font-size: 50px;
+                    font-weight: 700;
+                    color: var(--primary-color);
+                    line-height: 1.2;
+                    position: relative;
+                    .plus {
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        color: var(--primary-color);
+                        font-size: 16px;
+                        font-weight: 700;
+                    }
+                }
+                .key {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 1.6;
+                    color: var(--secondary-color);
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 16px;
+                    .dash {
+                        display: block;
+                        width: 40px;
+                        height: 4px;
+                        background-color: var(--primary-color);
+                        border-radius: 16px;
+                        margin-top: 12px;
+
+                    }
+                }
+            }
+        }
+    }
+    .skills-container{
+        display: flex;
+        flex-direction: column;
+        max-width: 1200px;
+        gap: 32px;
+        .skill-heading {
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 1.2;
+            color: var(--secondary-color);
+            text-align: center;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            color: var(--secondary-color);
+            .skill {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                padding: 16px;
+                flex: 0 0 auto;
+                width: 25%;
+                align-items: center;
+                ::ng-deep .ant-progress-text{
+                    color: var(--secondary-color);
+                }
+            }
+        }
+    }
+    .experience-container {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        .experience-heading {
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 1.2;
+            color: var(--secondary-color);
+            text-align: center;
+        }
+        .experiences {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            .experience {
+                flex: 0 0 50%;
+                max-width: 50%;
+                padding: 16px;
+                border-radius: 5px;
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                gap: 8px;
+                .icon {
+                    font-size: 16px;
+                    background-color: var(--primary-color);
+                    color: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 50%;
+                    max-width: 10%;
+                }
+                .experience-info {
+                    max-width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    padding: 4px 0;
+                    .date {
+                        font-size: 12px;
+                        margin: 0;
+                        padding: 1px 10px;
+                        display: inline-block;
+                        border-radius: 20px;
+                        font-weight: 600;
+                        background-color: var(--tertiary-color);
+                        color: var(--secondary-color);
+                        opacity: .8;
+                        width: fit-content;
+                    }
+                    .role {
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: var(--secondary-color);
+                        display: flex;
+                        gap: 4px;
+                        .company {
+                            font-size: 18px;
+                            font-weight: 600;
+                            color: var(--primary-color);
+                        }
+                        .dash {
+                            display: block;
+                            width: 40px;
+                            height: 4px;
+                            background-color: var(--primary-color);
+                            border-radius: 16px;
+                            margin-top: 12px;
+    
+                        }
+                    }
+                    .description {
+                        font-size: 15px;
+                        color: var(--secondary-color);
+                        line-height: 1.6;
+                    }
+                }
+            }
+        }
+    }
+}
