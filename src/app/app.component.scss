@@ -2,6 +2,7 @@
   position: relative;
   min-height: 100vh;
   height: auto;
+  background-color: var(--tertiary-color);
   .dark-mode, .day-mode {
     position: fixed;
     margin: 24px;
