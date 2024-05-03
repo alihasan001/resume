@@ -90,3 +90,28 @@
     }
 }
 }
+
+@media screen and (max-width: 992px) {
+  .app{
+    .controls{
+      background-color: var(--background-color);
+      bottom: 0;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-around;
+      padding: 0 20px;
+      height: 60px;
+      min-height: 60px;
+      margin: 0;
+      align-items: center;
+      z-index: 1000000;
+      .control {
+        background-color: var(--tertiary-color);
+        .text {
+          display: none;
+        }
+      }
+    }
+  }
+
+}

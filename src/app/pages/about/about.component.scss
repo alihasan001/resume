@@ -264,3 +264,102 @@
         }
     }
 }
+
+@media screen and (max-width: 992px) {
+    .container {
+        flex-direction: column;
+        padding: 0 5%;
+        align-items: start;
+        padding: 80px 5%;
+        .info-containers {
+            width: 100%;
+            align-items: center;
+            flex-direction: column;
+            gap: 70px;
+            .info-container {
+                width: 100%;
+                .infos {
+                    .info {
+                        flex-direction: column;
+                        display: flex;
+                    }
+                }
+            }
+            .cards-container{
+                width: 100%;
+                gap: 16px;
+                .card {
+                    max-width: 100%;
+                    flex: 0 0 100% !important;
+                }
+            }
+                .heading, .heading-2 {
+                    font-size: 38px;
+                    line-height: 48px;  
+                    padding: 0;
+                    .dash {
+                        display: none;
+                    }          
+                }
+                .description {
+                    font-size: 18px;
+                    text-align: center;
+                }
+            }
+        .skills-container {
+            .skills {
+                .skill {
+                    max-width: 33%;
+                    flex: 0 0 33% !important;
+                }
+            }
+        }
+        .experience-container {
+            .experience {
+                width: 100%;
+                max-width: 100% !important;
+                flex: 0 0 100% !important;
+                .icon {
+                    max-width: 15% !important;
+                }
+                .experience-info {
+                    max-width: 85% !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 552px) {
+    .container {
+        flex-direction: column;
+        padding-bottom: 60px;
+        padding: 80px 5%;
+        align-items: start;
+        .info-containers {
+            width: 100%;
+            align-items: center;
+            flex-direction: column;
+            .heading, .heading-2 {
+                font-size: 24px;
+                line-height: 39px;
+                padding: 0;
+                .dash {
+                    display: none;
+                }          
+            }
+            .description {
+                font-size: 16px;
+                text-align: center;
+            }
+        }
+        .skills-container {
+            .skills {
+                .skill {
+                    max-width: 50%;
+                    flex: 0 0 50% !important;
+                }
+            }
+        }
+    }
+}

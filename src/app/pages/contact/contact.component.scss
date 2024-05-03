@@ -155,3 +155,30 @@
         }
     }
 }
+
+
+@media screen and (max-width: 992px) {
+    .container{
+        width: 100%;
+        max-width: 992px;
+        min-height: 100vh;
+        height: 100%;
+        padding: 0 5%;
+        .input-container {
+            flex-direction: column;
+            gap: 70px;
+            padding-bottom: 100px;
+            .info {
+                max-width: 100%;
+                height: fit-content;
+            }
+            .form{
+                padding: 0;
+                .name, .email, .subject, .email-data {
+                    width: 100%;
+                    flex: 0 0 100%;
+                }
+            }
+        }
+    }
+}

@@ -85,3 +85,16 @@
         }
     }
 }
+
+@media screen and (max-width: 992px) {
+    .container {
+        padding: 0 5%;
+        .cards {
+            padding-bottom: 80px;
+            .card {
+                max-width: 100%;
+                flex: 0 0 100%;
+            }
+        }
+    }
+}
