@@ -6,7 +6,7 @@
     gap: 70px;
     padding: 80px 0;
     background-color: var(--background-color);
-    height: 100vh;
+    min-height: 100vh;
     animation: slideIn 1s backwards;
     .heading {
         font-size: 56px;
@@ -27,7 +27,6 @@
         max-width: 1200px;
     }
     .info {
-        height: 450px;
         max-width: 35%;
         display: flex;
         flex-direction: column;
@@ -67,7 +66,7 @@
                 .value {
                     font-weight: 600;
                     line-height: 25px;
-                    font-size: 15px;
+                    font-size: 12px;
                     color: var(--secondary-color);
                 }
             }
@@ -89,7 +88,6 @@
         }
     }
     .form {
-        height: 450px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;

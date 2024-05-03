@@ -8,7 +8,7 @@
                     <span class="key">{{info.key}}: </span><span class="value">{{info.value}}</span>
                 </div>
             </div>
-            <button class="more-btn">Download CV <span class="arrow-right" nz-icon nzType="download" nzTheme="outline"></span></button>
+            <button (click)="downloadResume()" class="more-btn">Download CV <span class="arrow-right" nz-icon nzType="download" nzTheme="outline"></span></button>
         </div>
         <div class="cards-container">
             <div class="card" *ngFor="let card of cardsInfo">

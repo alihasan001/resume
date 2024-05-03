@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 
 @Component({
@@ -13,4 +14,19 @@ export class ContactComponent {
     { key: 'LinkedIn', value: 'https://www.linkedin.com/in/ali-hassan-1b1b1b1b1/',  icon:'linkedin' },
     { key: 'Github', value: 'https://github.com/alihasan0123',  icon:'github' }
   ]
+
+  constructor(private http: HttpClient){}
+
+  downloadResume() {
+    const url = 'assets/Ali_Hasan_Full_Stack_Engineer.pdf'; // Path to your resume in the assets folder
+    this.http.get(url, { responseType: 'blob' }).subscribe(blob => {
+      const link = document.createElement('a');
+      link.href = window.URL.createObjectURL(blob);
+      link.download = 'Ali_Hasan_Full_Stack_Engineer.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    });
+
+  }
 }
