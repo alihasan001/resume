@@ -15,7 +15,7 @@ export class AboutComponent {
     { key: 'Address', value: 'Lahore, Punjab, Pakistan' },
     { key: 'Phone', value: '+923451702003' },
     { key: 'Email', value: 'alihasan.inbox@gmail.com' },
-    { key: 'Languages', value: 'English' }, // Only English mentioned, add others if applicable
+    { key: 'Languages', value: 'English, Urdu, and Punjabi' }, // Only English mentioned, add others if applicable
   ];
 
   cardsInfo = [
