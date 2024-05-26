@@ -9,9 +9,9 @@ import { Component } from '@angular/core';
 export class ContactComponent {
 
   contacts = [
-    { key: 'Phone', value: '+923451702003', icon:'phone' },
+    { key: 'Phone', value: '+92 345 1702003', icon:'phone' },
     { key: 'Email', value: 'alihassan.inbox@gmail.com',  icon:'mail'},
-    { key: 'LinkedIn', value: 'https://www.linkedin.com/in/ali-hassan-1b1b1b1b1/',  icon:'linkedin' },
+    { key: 'LinkedIn', value: 'https://www.linkedin.com/in/ali-hasan-49abaa19b/',  icon:'linkedin' },
     { key: 'Github', value: 'https://github.com/alihasan0123',  icon:'github' }
   ]
 
